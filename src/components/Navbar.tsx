@@ -1,17 +1,17 @@
-import {Link, useNavigate} from 'react-router-dom';
-import {Search, User, Menu, X, LogOut, LayoutDashboard} from 'lucide-react';
-import {useState} from 'react';
-import {useAuth} from '@/context/AuthContext';
-import {CATEGORIES, SITE_NAME} from '@/lib/config';
+import { Link, useNavigate } from 'react-router-dom';
+import { Search, User, Menu, X, LogOut, LayoutDashboard } from 'lucide-react';
+import { useState } from 'react';
+import { useAuth } from '@/context/AuthContext';
+import { CATEGORIES, SITE_NAME } from '@/lib/config';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
-  const {user, profile, signOut} = useAuth();
+  const { user, profile, signOut } = useAuth();
 
-  const navLinks = [{name: 'Inicio', href: '/'}, ...CATEGORIES.map((c) => ({name: c, href: `/?category=${encodeURIComponent(c)}`}))];
+  const navLinks = [{ name: 'Inicio', href: '/' }, ...CATEGORIES.map((c) => ({ name: c, href: `/?category=${encodeURIComponent(c)}` }))];
 
   function onSearchSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -26,8 +26,13 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-outline/10">
       <nav className="container-custom py-4 flex justify-between items-center gap-4">
-        <Link to="/" className="flex items-center shrink-0">
-          <img src="/logo.svg" alt={SITE_NAME} className="h-9 md:h-10 w-auto" />
+        <Link to="/" className="flex items-center gap-2 shrink-0 py-1 group">
+          <img
+            src="/logocamidante.svg"
+            alt={SITE_NAME}
+            className="h-16 sm:h-18 w-auto object-contain"
+            style={{ minWidth: '48px' }}
+          />
         </Link>
 
         <ul className="hidden md:flex items-center gap-8 flex-wrap justify-center">
