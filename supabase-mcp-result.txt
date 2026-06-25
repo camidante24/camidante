@@ -1,1 +1,0 @@
-NO_APLICADA: user cancelled MCP tool call
