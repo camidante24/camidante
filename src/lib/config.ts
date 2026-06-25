@@ -8,6 +8,8 @@ export const ENABLE_LOCAL_FALLBACK =
 
 export const CATEGORIES = ['Escritos', 'Pensamientos', 'Arte', 'Archivo'] as const;
 
+export const OG_IMAGE_DEFAULT = '/og-default.svg';
+
 export const SOCIAL_LINKS = {
   instagram: '#',
   twitter: '#',

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70">
+  <defs>
+    <style>
+      .stroke { fill: none; stroke: #90472c; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .leash { fill: none; stroke: #90472c; stroke-width: 1.8; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- === CAMILA === -->
+  <g class="stroke">
+    <!-- Head -->
+    <circle cx="36" cy="17" r="6"/>
+    <!-- Body -->
+    <path d="M36 23 L36 43"/>
+    <!-- Arm reaching forward holding leash -->
+    <path d="M36 31 Q44 29 53 28"/>
+    <!-- Back leg -->
+    <path d="M36 43 L31 53"/>
+    <!-- Front leg -->
+    <path d="M36 43 L40 53"/>
+  </g>
+
+  <!-- === LEASH === -->
+  <path class="leash" d="M53 28 Q60 25 67 23.5"/>
+
+  <!-- === DANTE (Golden Retriever) === -->
+  <g class="stroke">
+    <!-- Head (broad oval) -->
+    <ellipse cx="80" cy="20" rx="10" ry="7"/>
+    <!-- Snout -->
+    <path d="M89 18 Q93 20 90 23"/>
+    <!-- Back ear (droopy) -->
+    <path d="M71 18 Q67 27 72 33"/>
+    <!-- Front ear (droopy - golden hallmark) -->
+    <path d="M84 16 Q88 27 83 32"/>
+    <!-- Back/top line -->
+    <path d="M91 22 C102 24 113 28 123 32"/>
+    <!-- Tail (upturned sweep) -->
+    <path d="M123 32 Q129 26 127 22"/>
+    <!-- Front legs -->
+    <path d="M91 30 L86 43 M95 31 L91 44"/>
+    <!-- Back legs -->
+    <path d="M113 35 L108 47 M118 35 L114 47"/>
+  </g>
+
+  <!-- === TEXT === -->
+  <text x="152" y="41" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="700" fill="#1b1c1c" letter-spacing="-0.02em">CamiDante</text>
+</svg>

@@ -26,11 +26,8 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-outline/10">
       <nav className="container-custom py-4 flex justify-between items-center gap-4">
-        <Link to="/" className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 border border-primary/20 rounded-full flex items-center justify-center bg-white shadow-soft group-hover:scale-105 transition-transform">
-            <span className="text-primary font-serif font-bold italic text-xl">C</span>
-          </div>
-          <span className="font-serif text-2xl font-semibold tracking-tighter text-on-background hidden sm:inline">{SITE_NAME}</span>
+        <Link to="/" className="flex items-center shrink-0">
+          <img src="/logo.svg" alt={SITE_NAME} className="h-9 md:h-10 w-auto" />
         </Link>
 
         <ul className="hidden md:flex items-center gap-8 flex-wrap justify-center">

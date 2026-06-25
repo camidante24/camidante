@@ -149,8 +149,8 @@ export default function Article() {
         </div>
 
         <div className="mt-20 p-8 bg-surface-container-low rounded-xl border border-outline/10 flex flex-col md:flex-row items-center gap-8 shadow-soft">
-          <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-primary/20 shrink-0 bg-white flex items-center justify-center">
-            <span className="text-primary font-serif font-bold italic text-3xl">{SITE_NAME.charAt(0)}</span>
+          <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-primary/20 shrink-0 bg-white flex items-center justify-center p-4">
+            <img src="/favicon.svg" alt={SITE_NAME} className="w-full h-full" />
           </div>
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-2">{AUTHOR.name}</h3>
